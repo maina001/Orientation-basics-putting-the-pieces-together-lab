@@ -1,19 +1,20 @@
 # Make your shoe class here!
 require 'pry'
-class Book
-  attr_reader :title
-  attr_accessor :author, :page_count, :genre, :turn_page
+class Shoe
+  attr_reader :brand
+  attr_accessor :color, :size, :material, :condition
 
-
-  def initialize (title)
-    @title = title
+  def initialize (brand)
+    @brand = brand
   end
 
-  def turn_page
-   puts "Flipping the page...wow, you read fast!"
+  def cobble
+    @condition = "new"
+    puts "Your shoe is as good as new!"
   end
-
-
-
-  # binding.pry
 end
+# binding.pry
+
+
+shoe1 = Shoe.new("Fosa")
+# puts shoe1.brand
